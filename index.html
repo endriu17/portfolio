@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body data-spy="scroll" data-target=".sidenav" data-offset="50">
+    <header>
+      <nav class="nav sidenav" id="sidenav">
+        <ul class="nav navbar-nav">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="jumbotron jumbotron-fluid text-white text-left" id="home">
+        <div class="container">
+          <h1 class="display-1">I'm Andrzej Olaszewski</h1>
+          <h2>A Front-end Developer</h2>
+          <button
+            type="button"
+            class="btn btn-outline-secondary btn-lg"
+            data-target="#projects"
+          >
+            <a href="#projects">Show Projects</a>
+          </button>
+        </div>
+      </section>
+    </header>
+    <div class="container-fluid content">
+      <section id="about">
+        <div class="row">
+          <div class="about-me col-md-6"></div>
+          <div class="about-text text-left col-md-6">
+            <h1>About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              doloribus quo iure debitis beatae animi, perspiciatis sit id
+              voluptatem ipsa molestias natus et nihil eius, vero eaque a
+              temporibus totam!
+            </p>
+            <a class="btn btn-outline-dark btn-lg" href="#contact">
+              Contact me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container skills" id="skills">
+        <h2 class="display-4 py-5 mt-5 text-center">Skills</h2>
+
+        <ul class="nav nav-tabs justify-content-center flex-column flex-md-row">
+          <li class="nav-item">
+            <a class="nav-link active" href="#frontend" data-toggle="tab"
+              >Front-end development</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project-managing" data-toggle="tab"
+              >Project Managing</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#personal-skills" data-toggle="tab"
+              >Personal</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#other" data-toggle="tab">Other</a>
+          </li>
+        </ul>
+
+        <div class="tab-content py-5">
+          <div class="tab-pane fade show active" id="frontend">
+            <p>
+              HTML, CSS3, SASS (SCSS), Javascript (ES5, ES6), jQuery, RWD,
+              React.js, React router, Flexbox, Bootstrap, Node.js, Webpack,
+              Redux, Express.js, MERN, MongoDB, Mongoose
+            </p>
+          </div>
+          <div class="tab-pane fade" id="project-managing">
+            <p>
+              Git, GitHub, BitBucket, Agile, Scrum, Jira, Trello
+            </p>
+          </div>
+          <div class="tab-pane fade" id="personal-skills">
+            <p>
+              Good communication with other people regardless of background.
+              Aappreciate honesty, loyalty and responsibility. Good
+              interpersonals skills. Well organized, maintains order in the
+              workplace.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="other">
+            <p>
+              Linux OS; both use and basic administration (Debian baserte).<br />
+              Driving license B.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid projects-header" id="projects">
+        <div class="row">
+          <div class="col-sm-6 projects-header_img"></div>
+          <div class="col-sm-6 projects-header_text">
+            <h1>Projects</h1>
+            <p>
+              Poniżej projekty zrealizowane przeze mnie w ostatnim okresie.
+              Główne technologie to: HTML, CSS3, SCSS, Javascript, React (z
+              React Router i Redux), Webpack. Szczególną uwagę zwracam na RWD i
+              UX.
+            </p>
+          </div>
+        </div>
+
+        <div class="container-fluid projects-gallery">
+          <div class="row">
+            <div class="col-sm-5 gallery-image">
+              <img
+                src="/images/jumbotron-bg.jpeg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Responsive image"
+              />
+            </div>
+            <div class="col-sm-2 project-line">
+              <span class="line-vertical_first"></span>
+              <span class="line-horizontal"></span>
+            </div>
+            <div class="col-sm-5 project-description">
+              <h2>Project name</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ducimus, expedita! Voluptates accusamus impedit doloribus minima
+                qui autem repudiandae culpa ratione consectetur porro. Vero ab,
+                officiis soluta amet aspernatur excepturi ipsam.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="order-3 col-sm-5 gallery-image">
+              <img
+                src="/images/jumbotron-bg.jpeg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Responsive image"
+              />
+            </div>
+            <div class="order-2 col-sm-2 project-line">
+              <span class="line-vertical"></span>
+              <span class="line-horizontal"></span>
+            </div>
+            <div class="order-1 col-sm-5 project-description">
+              <h2>Project name</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ducimus, expedita! Voluptates accusamus impedit doloribus minima
+                qui autem repudiandae culpa ratione consectetur porro. Vero ab,
+                officiis soluta amet aspernatur excepturi ipsam.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="order-1 col-sm-5 gallery-image">
+              <img
+                src="/images/jumbotron-bg.jpeg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Responsive image"
+              />
+            </div>
+            <div class="order-2 col-sm-2 project-line">
+              <span class="line-vertical"></span>
+              <span class="line-horizontal"></span>
+            </div>
+            <div class="order-3 col-sm-5 project-description">
+              <h2>Project name</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ducimus, expedita! Voluptates accusamus impedit doloribus minima
+                qui autem repudiandae culpa ratione consectetur porro. Vero ab,
+                officiis soluta amet aspernatur excepturi ipsam.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="order-3 col-sm-5 gallery-image">
+              <img
+                src="/images/jumbotron-bg.jpeg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Responsive image"
+              />
+            </div>
+            <div class="order-2 col-sm-2 project-line">
+              <span class="line-vertical"></span>
+              <span class="line-horizontal"></span>
+            </div>
+            <div class="order-1 col-sm-5 project-description">
+              <h2>Project name</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ducimus, expedita! Voluptates accusamus impedit doloribus minima
+                qui autem repudiandae culpa ratione consectetur porro. Vero ab,
+                officiis soluta amet aspernatur excepturi ipsam.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="order-1 col-sm-5 gallery-image">
+              <img
+                src="/images/jumbotron-bg.jpeg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Responsive image"
+              />
+            </div>
+            <div class="order-2 col-sm-2 project-line">
+              <span class="line-vertical_last"></span>
+              <span class="line-horizontal"></span>
+            </div>
+            <div class="order-3 col-sm-5 project-description">
+              <h2>Project name</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ducimus, expedita! Voluptates accusamus impedit doloribus minima
+                qui autem repudiandae culpa ratione consectetur porro. Vero ab,
+                officiis soluta amet aspernatur excepturi ipsam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid contact-panel" id="contact">
+        <h1>Contact me!</h1>
+      </section>
+    </div>
+
+    <section class="container-fluid footer">
+      <p>&copy; Andrzej Olaszewski 2019</p>
+    </section>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

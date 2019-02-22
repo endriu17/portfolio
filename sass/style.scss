@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  .sidenav {
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    right: 20px;
+    background: #000000b9;
+    overflow-x: hidden;
+    padding: 0;
+    border-radius: 5px;
+
+    ul {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      .nav-link {
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        &:hover {
+          color: #fff;
+          background-color: #f1f1f180;
+        }
+      }
+
+      a.active {
+        background-color: #f1f1f180;
+        color: #000;
+      }
+    }
+  }
+
+  .jumbotron {
+    background-image: url(/images/jumbotron-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+
+    .btn {
+      border: 1px solid #fff;
+      color: #fff;
+      margin-top: 20px;
+
+      a {
+        color: #fff;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .content {
+    .about-me {
+      background-image: url(/images/jumbotron-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+    }
+
+    .about-text {
+      height: 550px;
+      padding: 30px;
+      background-color: #f1f1f1;
+
+      h1 {
+        margin: 30px 0;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.5rem;
+        text-align: left;
+      }
+    }
+
+    .skills {
+      width: 80%;
+      .nav-link {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+      }
+
+      #frontend,
+      #project-managing,
+      #personal-skills,
+      #other {
+        font-size: 1.4rem;
+        text-align: center;
+        min-height: 200px;
+      }
+    }
+
+    .projects-header {
+      height: auto;
+      .projects-header_img {
+        background-image: url(/images/jumbotron-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+      }
+
+      .projects-header_text {
+        text-align: center;
+        padding: 50px 30px;
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .projects-gallery {
+      max-width: 1200px;
+      .gallery-image {
+        margin-top: 30px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+
+      .project-line {
+        position: relative;
+        .line-horizontal {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          height: 5px;
+          background-color: #f1f1f1;
+          width: 95%;
+        }
+
+        .line-vertical_first {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          height: 50%;
+          background-color: #f1f1f1;
+          width: 5px;
+        }
+
+        .line-vertical_last {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          height: 50%;
+          background-color: #f1f1f1;
+          width: 5px;
+        }
+
+        .line-vertical {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          height: 100%;
+          background-color: #f1f1f1;
+          width: 5px;
+        }
+      }
+
+      .project-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .contact-panel {
+      height: 500px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    padding: 20px;
+    line-height: 1.2rem;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
