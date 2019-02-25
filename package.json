@@ -25,6 +25,7 @@
     "audit": "0.0.6",
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.18.13",
+    "express": "^4.16.4",
     "fix": "0.0.6",
     "glob-run": "^0.1.6",
     "jshint": "^2.9.5",

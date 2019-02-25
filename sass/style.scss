@@ -109,12 +109,13 @@ body {
     }
 
     .projects-header {
-      height: auto;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
       .projects-header_img {
-        background-image: url(/images/jumbotron-bg.png);
+        background-image: url(/images/projects.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 400px;
+        height: 500px;
         width: 100%;
       }
 
@@ -132,6 +133,7 @@ body {
       }
     }
     .projects-gallery {
+      margin-top: 50px;
       max-width: 1200px;
       .gallery-image {
         margin-top: 30px;
@@ -140,7 +142,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-
+        flex-wrap: wrap;
         img {
           width: 300px;
           height: auto;
@@ -200,7 +202,13 @@ body {
     }
 
     .contact-panel {
-      height: 500px;
+      // height: 500px;
+      margin-top: 50px;
+      max-width: 1200px;
+
+      p {
+        width: 50%;
+      }
     }
   }
 
