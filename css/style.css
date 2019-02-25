@@ -102,6 +102,7 @@ body .content .skills .nav-link {
 body .content .skills #frontend,
 body .content .skills #project-managing,
 body .content .skills #personal-skills,
+body .content .skills #languages,
 body .content .skills #other {
   font-size: 1.4rem;
   text-align: center;
@@ -148,7 +149,7 @@ body .content .projects-gallery .gallery-image {
 
 body .content .projects-gallery .gallery-image img {
   width: 300px;
-  height: 300px;
+  height: auto;
 }
 
 body .content .projects-gallery .project-line {
