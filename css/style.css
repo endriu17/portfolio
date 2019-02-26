@@ -223,6 +223,11 @@ body .content .contact-panel {
   max-width: 1200px;
 }
 
+body .content .contact-panel .btn-send {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 body .content .contact-panel p {
   width: 50%;
 }
