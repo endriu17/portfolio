@@ -43,10 +43,8 @@ body .sidenav ul a.active {
 }
 
 body .jumbotron {
-  background-image: url(/images/jumbotron-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
+  background-color: #696969;
+  height: 550px;
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -67,11 +65,23 @@ body .jumbotron .btn a:hover {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 565px) {
+  body .jumbotron h1 {
+    font-size: 50px;
+  }
+}
+
 body .content .about-me {
   background-image: url(/images/jumbotron-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: auto;
+}
+
+body .content .about-me img {
+  filter: invert(100%);
+  width: 200px;
   height: auto;
 }
 
@@ -110,9 +120,10 @@ body .content .skills #project-managing,
 body .content .skills #personal-skills,
 body .content .skills #languages,
 body .content .skills #other {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-align: center;
-  min-height: 200px;
+  margin-bottom: 50px;
+  min-height: 150px;
 }
 
 body .content .projects-header {
@@ -144,10 +155,6 @@ body .content .projects-header .projects-header_text p {
 body .content .projects-gallery {
   margin-top: 50px;
   max-width: 1200px;
-}
-
-body .content .projects-gallery .gallery-row {
-  height: 350px;
 }
 
 body .content .projects-gallery .gallery-row .gallery-image {
@@ -206,6 +213,12 @@ body .content .projects-gallery .gallery-row .project-line .line-vertical {
   width: 5px;
 }
 
+@media only screen and (max-width: 565px) {
+  body .content .projects-gallery .gallery-row .project-line {
+    display: none;
+  }
+}
+
 body .content .projects-gallery .gallery-row .project-description {
   display: flex;
   flex-direction: column;
@@ -246,6 +259,12 @@ body .content .contact-panel .contact-social a {
 
 body .content .contact-panel .contact-social a:hover {
   color: #4b4b4bed;
+}
+
+@media only screen and (max-width: 565px) {
+  body .content .contact-panel .contact-social {
+    flex-direction: row;
+  }
 }
 
 body .footer {
