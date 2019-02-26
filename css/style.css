@@ -14,6 +14,7 @@ body .sidenav {
   overflow-x: hidden;
   padding: 0;
   border-radius: 5px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body .sidenav ul {
@@ -55,6 +56,7 @@ body .jumbotron .btn {
   border: 1px solid #fff;
   color: #fff;
   margin-top: 20px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body .jumbotron .btn a {
@@ -87,6 +89,10 @@ body .content .about-text h1 {
 body .content .about-text p {
   font-size: 1.5rem;
   text-align: left;
+}
+
+body .content .about-text a {
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body .content .skills {
@@ -140,7 +146,11 @@ body .content .projects-gallery {
   max-width: 1200px;
 }
 
-body .content .projects-gallery .gallery-image {
+body .content .projects-gallery .gallery-row {
+  height: 350px;
+}
+
+body .content .projects-gallery .gallery-row .gallery-image {
   margin-top: 30px;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -150,16 +160,17 @@ body .content .projects-gallery .gallery-image {
   flex-wrap: wrap;
 }
 
-body .content .projects-gallery .gallery-image img {
+body .content .projects-gallery .gallery-row .gallery-image img {
   width: 300px;
   height: auto;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body .content .projects-gallery .project-line {
+body .content .projects-gallery .gallery-row .project-line {
   position: relative;
 }
 
-body .content .projects-gallery .project-line .line-horizontal {
+body .content .projects-gallery .gallery-row .project-line .line-horizontal {
   position: absolute;
   top: 50%;
   left: 0;
@@ -168,7 +179,7 @@ body .content .projects-gallery .project-line .line-horizontal {
   width: 95%;
 }
 
-body .content .projects-gallery .project-line .line-vertical_first {
+body .content .projects-gallery .gallery-row .project-line .line-vertical_first {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -177,7 +188,7 @@ body .content .projects-gallery .project-line .line-vertical_first {
   width: 5px;
 }
 
-body .content .projects-gallery .project-line .line-vertical_last {
+body .content .projects-gallery .gallery-row .project-line .line-vertical_last {
   position: absolute;
   left: 50%;
   top: 0;
@@ -186,7 +197,7 @@ body .content .projects-gallery .project-line .line-vertical_last {
   width: 5px;
 }
 
-body .content .projects-gallery .project-line .line-vertical {
+body .content .projects-gallery .gallery-row .project-line .line-vertical {
   position: absolute;
   left: 50%;
   top: 0;
@@ -195,7 +206,7 @@ body .content .projects-gallery .project-line .line-vertical {
   width: 5px;
 }
 
-body .content .projects-gallery .project-description {
+body .content .projects-gallery .gallery-row .project-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,7 +214,7 @@ body .content .projects-gallery .project-description {
   padding: 30px;
 }
 
-body .content .projects-gallery .project-description p {
+body .content .projects-gallery .gallery-row .project-description p {
   font-size: 1.2rem;
 }
 
@@ -216,17 +227,35 @@ body .content .contact-panel p {
   width: 50%;
 }
 
+body .content .contact-panel .contact-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .content .contact-panel .contact-social a {
+  color: #000;
+  margin: 10px;
+}
+
+body .content .contact-panel .contact-social a:hover {
+  color: #4b4b4bed;
+}
+
 body .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   padding: 20px;
-  line-height: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: #fff;
+  margin-top: 30px;
 }
 
 body .footer p {
   font-size: 1.2rem;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

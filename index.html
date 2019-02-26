@@ -13,6 +13,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body data-spy="scroll" data-target=".sidenav" data-offset="50">
     <header>
@@ -138,8 +139,8 @@
         </div>
 
         <div class="container-fluid projects-gallery">
-          <div class="row">
-            <div class="col-sm-5 gallery-image">
+          <div class="row gallery-row">
+            <div class="order-3 col-sm-5 gallery-image">
               <a
                 href="https://goofy-hypatia-b08934.netlify.com/"
                 target="_blank"
@@ -151,11 +152,11 @@
                 />
               </a>
             </div>
-            <div class="col-sm-2 project-line">
+            <div class="order-2 col-sm-2 project-line">
               <span class="line-vertical_first"></span>
               <span class="line-horizontal"></span>
             </div>
-            <div class="col-sm-5 project-description">
+            <div class="order-1 col-sm-5 project-description">
               <h2>Shop app</h2>
               <span class="text-left">Date: january 2019</span>
               <p>
@@ -166,7 +167,35 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
+            <div class="order-1 col-sm-5 gallery-image">
+              <a
+                href="https://fierce-ridge-14465.herokuapp.com/"
+                target="_blank"
+              >
+                <img
+                  src="/images/kanban-mern.png"
+                  class="img-fluid img-thumbnail"
+                  alt="Responsive image"
+                />
+              </a>
+            </div>
+            <div class="order-2 col-sm-2 project-line">
+              <span class="line-vertical"></span>
+              <span class="line-horizontal"></span>
+            </div>
+            <div class="order-3 col-sm-5 project-description">
+              <h2>MERN Kanban</h2>
+              <span>Date: December 2018</span>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ducimus, expedita! Voluptates accusamus impedit doloribus minima
+                qui autem repudiandae culpa ratione consectetur porro. Vero ab,
+                officiis soluta amet aspernatur excepturi ipsam.
+              </p>
+            </div>
+          </div>
+          <div class="row gallery-row">
             <div class="order-3 col-sm-5 gallery-image">
               <a
                 href="https://endriu17.github.io/first-individual-project/"
@@ -194,7 +223,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-1 col-sm-5 gallery-image">
               <a
                 href="https://endriu17.github.io/Todo_webpack_react/"
@@ -222,7 +251,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-3 col-sm-5 gallery-image">
               <a
                 href="https://endriu17.github.io/solo-project-1/"
@@ -250,7 +279,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-1 col-sm-5 gallery-image">
               <a href="https://endriu17.github.io/kanban/" target="_blank">
                 <img
@@ -275,7 +304,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-3 col-sm-5 gallery-image">
               <a
                 href="https://endriu17.github.io/git_users_search/"
@@ -303,7 +332,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-1 col-sm-5 gallery-image">
               <a href="https://endriu17.github.io/gameRPS/" target="_blank">
                 <img
@@ -328,7 +357,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-3 col-sm-5 gallery-image">
               <a
                 href="https://nervous-euclid-1f515f.netlify.com/"
@@ -356,7 +385,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-1 col-sm-5 gallery-image">
               <a
                 href="https://endriu17.github.io/kanban_final/"
@@ -384,7 +413,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-3 col-sm-5 gallery-image">
               <a
                 href="https://endriu17.github.io/git_users_search/"
@@ -412,7 +441,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-1 col-sm-5 gallery-image">
               <a
                 href="https://endriu17.github.io/AJAX_API/"
@@ -441,7 +470,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-3 col-sm-5 gallery-image">
               <a
                 href="https://deploy-preview-51--dreamy-goldwater.netlify.com/"
@@ -469,7 +498,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row gallery-row">
             <div class="order-1 col-sm-5 gallery-image">
               <a
                 href="https://github.com/endriu17"
@@ -508,11 +537,12 @@
           amet aspernatur excepturi ipsam.
         </p>
         <h3>I'm Available for Hiring!</h3>
-        <form class="mt-md-5" action="/" id="contact-form" method="post" role="form">
+        <form class="mt-md-5" id="contact-form" action="POST" data-netlify="true">
           <div class="messages"></div>
-          <div class="controls">
+          <div class="row">
+          <div class="controls col-md-6">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
                   <label for="form_name">Firstname *</label>
                   <input
@@ -529,7 +559,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
                   <label for="form_lastname">Lastname *</label>
                   <input
@@ -546,7 +576,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
                   <label for="form_email">Email *</label>
                   <input
@@ -563,7 +593,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
                   <label for="form_message">Message *</label>
                   <textarea
@@ -577,6 +607,9 @@
                   ></textarea>
                   <div class="help-block with-errors"></div>
                 </div>
+              </div>
+              <div class="field">
+                <div data-netlify="recaptcha"></div>
               </div>
               <div class="col-md-12">
                 <input
@@ -594,6 +627,12 @@
               </div>
             </div>
           </div>
+          <div class="col-md-6 contact-social">
+            <a href="https://www.linkedin.com/in/andrzej-olaszewski-457914113/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-3x" target="_blank"></i></a>
+            <a href="https://github.com/endriu17"><i class="fab fa-github fa-3x" target="_blank"></i></a>
+          </div>
+        </div>
         </form>
       </section>
     </div>
