@@ -542,98 +542,100 @@
           amet aspernatur excepturi ipsam.
         </p>
         <h3>I'm Available for Hiring!</h3>
-        <form
-          name="contact-me"
-          method="POST"
-          data-netlify="true"
-          class="mt-md-5"
-          id="contact-form"
-        >
-          <div class="row">
-            <div class="controls col-md-6">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="form_name">Your name *</label>
-                    <input
-                      id="name"
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      placeholder="Your name *"
-                      required="required"
-                      data-error="Name is required."
-                    />
-                    <div class="help-block with-errors"></div>
+        <div class="row">
+          <form
+            name="contact-me"
+            method="POST"
+            data-netlify="true"
+            class="mt-md-5 col-md-6"
+            id="contact-form"
+          >
+            <div class="row">
+              <div class="controls col-md-12">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_name">Your name *</label>
+                      <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Your name *"
+                        required="required"
+                        data-error="Name is required."
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input
-                      id="form_email"
-                      type="email"
-                      name="email"
-                      class="form-control"
-                      placeholder="Your email *"
-                      required="required"
-                      data-error="Valid email is required."
-                    />
-                    <div class="help-block with-errors"></div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_email">Email *</label>
+                      <input
+                        id="form_email"
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Your email *"
+                        required="required"
+                        data-error="Valid email is required."
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="form_message">Message *</label>
-                    <textarea
-                      id="form_message"
-                      name="message"
-                      class="form-control"
-                      placeholder="Message for me *"
-                      rows="4"
-                      required="required"
-                      data-error="Please, leave us a message."
-                    ></textarea>
-                    <div class="help-block with-errors"></div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea
+                        id="form_message"
+                        name="message"
+                        class="form-control"
+                        placeholder="Message for me *"
+                        rows="4"
+                        required="required"
+                        data-error="Please, leave us a message."
+                      ></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12" data-netlify-recaptcha="true"></div>
+                  <div class="col-md-12">
+                    <button
+                      type="submit"
+                      class="btn btn-success btn-send"
+                      value="Send message"
+                    >
+                      Send message
+                    </button>
                   </div>
                 </div>
-                <div class="col-md-12" data-netlify-recaptcha="true"></div>
-                <div class="col-md-12">
-                  <button
-                    type="submit"
-                    class="btn btn-success btn-send"
-                    value="Send message"
-                  >
-                    Send message
-                  </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <p class="text-muted">
-                    <strong>*</strong> These fields are required.
-                  </p>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-muted">
+                      <strong>*</strong> These fields are required.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+          </form>
+          <div class="col-md-6 contact-social">
+            <a
+              href="https://www.linkedin.com/in/andrzej-olaszewski-457914113/"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-3x"></i
+            ></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook fa-3x" target="_blank"></i
+            ></a>
+            <a href="https://github.com/endriu17"
+              ><i class="fab fa-github fa-3x" target="_blank"></i
+            ></a>
           </div>
-        </form>
-        <div class="col-md-6 contact-social">
-          <a
-            href="https://www.linkedin.com/in/andrzej-olaszewski-457914113/"
-            target="_blank"
-            ><i class="fab fa-linkedin fa-3x"></i
-          ></a>
-          <a href="https://www.facebook.com/"
-            ><i class="fab fa-facebook fa-3x" target="_blank"></i
-          ></a>
-          <a href="https://github.com/endriu17"
-            ><i class="fab fa-github fa-3x" target="_blank"></i
-          ></a>
         </div>
       </section>
     </div>

@@ -234,6 +234,7 @@ body .content .contact-panel p {
 
 body .content .contact-panel .contact-social {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
