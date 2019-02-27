@@ -5,15 +5,15 @@ body {
   font-family: "Montserrat", sans-serif;
 
   .sidenav {
-    width: 150px;
+    width: 100%;
     position: fixed;
     z-index: 1;
-    top: 50px;
-    right: 20px;
+    top: 0;
+    left: 0;
     background: #000000b9;
     overflow-x: hidden;
     padding: 0;
-    border-radius: 5px;
+    height: 60px;
     box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
       0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -21,14 +21,23 @@ body {
       width: 100%;
       margin: 0;
       padding: 0;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
 
       .nav-link {
         text-decoration: none;
         font-size: 25px;
         color: #fff;
-        display: block;
-        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 60px;
         text-align: center;
+        margin: 0;
+        padding: 0 40px;
 
         &:hover {
           color: #fff;
@@ -46,23 +55,20 @@ body {
   .jumbotron {
     background-color: #2e2e2e;
     height: 550px;
+    margin-top: 60px;
     margin-bottom: 0;
     display: flex;
     align-items: center;
 
-    .btn {
+    a {
       border: 1px solid #fff;
       color: #fff;
       margin-top: 20px;
       box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-      a {
-        color: #fff;
-
-        &:hover {
-          text-decoration: none;
-        }
+      &:hover {
+        text-decoration: none;
       }
     }
     @media only screen and (max-width: 565px) {
@@ -172,12 +178,29 @@ body {
           justify-content: center;
           align-items: center;
           flex-wrap: wrap;
+          .project-link {
+            visibility: hidden;
+            position: absolute;
+            background-color: #0000009d;
+            padding: 10px;
+            font-size: 28px;
+            color: #fff;
+          }
           img {
             width: 400px;
             height: auto;
             box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
               0 6px 20px 0 rgba(0, 0, 0, 0.19);
             filter: grayscale(100%);
+          }
+
+          &:hover {
+            img {
+              filter: grayscale(0);
+            }
+            .project-link {
+              visibility: visible;
+            }
           }
         }
 

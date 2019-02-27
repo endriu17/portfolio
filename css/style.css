@@ -6,15 +6,15 @@ body {
 }
 
 body .sidenav {
-  width: 150px;
+  width: 100%;
   position: fixed;
   z-index: 1;
-  top: 50px;
-  right: 20px;
+  top: 0;
+  left: 0;
   background: #000000b9;
   overflow-x: hidden;
   padding: 0;
-  border-radius: 5px;
+  height: 60px;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -22,15 +22,24 @@ body .sidenav ul {
   width: 100%;
   margin: 0;
   padding: 0;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 body .sidenav ul .nav-link {
   text-decoration: none;
   font-size: 25px;
   color: #fff;
-  display: block;
-  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
   text-align: center;
+  margin: 0;
+  padding: 0 40px;
 }
 
 body .sidenav ul .nav-link:hover {
@@ -46,23 +55,20 @@ body .sidenav ul a.active {
 body .jumbotron {
   background-color: #2e2e2e;
   height: 550px;
+  margin-top: 60px;
   margin-bottom: 0;
   display: flex;
   align-items: center;
 }
 
-body .jumbotron .btn {
+body .jumbotron a {
   border: 1px solid #fff;
   color: #fff;
   margin-top: 20px;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body .jumbotron .btn a {
-  color: #fff;
-}
-
-body .jumbotron .btn a:hover {
+body .jumbotron a:hover {
   text-decoration: none;
 }
 
@@ -176,11 +182,28 @@ body .content .projects-gallery .gallery-row .gallery-image {
   flex-wrap: wrap;
 }
 
+body .content .projects-gallery .gallery-row .gallery-image .project-link {
+  visibility: hidden;
+  position: absolute;
+  background-color: #0000009d;
+  padding: 10px;
+  font-size: 28px;
+  color: #fff;
+}
+
 body .content .projects-gallery .gallery-row .gallery-image img {
   width: 400px;
   height: auto;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   filter: grayscale(100%);
+}
+
+body .content .projects-gallery .gallery-row .gallery-image:hover img {
+  filter: grayscale(0);
+}
+
+body .content .projects-gallery .gallery-row .gallery-image:hover .project-link {
+  visibility: visible;
 }
 
 body .content .projects-gallery .gallery-row .project-line {
