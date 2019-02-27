@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body .sidenav {
@@ -234,7 +234,7 @@ body .content .projects-gallery .gallery-row .project-description {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 30px 5px;
   margin-top: 50px;
 }
 
@@ -244,7 +244,7 @@ body .content .projects-gallery .gallery-row .project-description span {
 }
 
 body .content .projects-gallery .gallery-row .project-description p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 body .content .contact-panel {
@@ -257,6 +257,10 @@ body .content .contact-panel h3 {
   text-align: center;
 }
 
+body .content .contact-panel p {
+  font-size: 1.5rem;
+}
+
 body .content .contact-panel label {
   padding-left: 10px;
   font-size: 1.3rem;
@@ -265,6 +269,7 @@ body .content .contact-panel label {
 
 body .content .contact-panel .btn-send {
   font-size: 1.3rem;
+  margin-top: 20px;
 }
 
 body .content .contact-panel .btn-send:hover {
@@ -272,8 +277,9 @@ body .content .contact-panel .btn-send:hover {
   color: #fff;
 }
 
-body .content .contact-panel p.text-muted {
+body .content .contact-panel .text-required {
   text-align: left;
+  margin: 10px 0;
 }
 
 body .content .contact-panel p {
