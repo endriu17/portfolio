@@ -11,3 +11,4 @@ $(".nav-tabs .nav-item").on("click", function() {
     .removeClass("active");
   $(this).addClass("active");
 });
+
