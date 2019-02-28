@@ -1,3 +1,4 @@
+*{ border-radius: 0 !important; }
 body,
 html {
   margin: 0;
@@ -48,14 +49,17 @@ html {
           }
 
           &:hover {
-            color: #fff;
-            background-color: #f1f1f180;
+            color: #0085da;
+            // background-color: #f1f1f180;
           }
         }
 
         a.active {
           background-color: #0085da;
           color: #fff;
+          &:hover {
+            color: #fff;
+          }
         }
       }
     }

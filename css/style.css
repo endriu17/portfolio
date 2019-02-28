@@ -1,3 +1,7 @@
+* {
+  border-radius: 0 !important;
+}
+
 body,
 html {
   margin: 0;
@@ -67,13 +71,17 @@ html .sidenav ul li .nav-link {
 
 body .sidenav ul li .nav-link:hover,
 html .sidenav ul li .nav-link:hover {
-  color: #fff;
-  background-color: #f1f1f180;
+  color: #0085da;
 }
 
 body .sidenav ul li a.active,
 html .sidenav ul li a.active {
   background-color: #0085da;
+  color: #fff;
+}
+
+body .sidenav ul li a.active:hover,
+html .sidenav ul li a.active:hover {
   color: #fff;
 }
 
