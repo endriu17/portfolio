@@ -14,7 +14,6 @@ html .sidenav {
   top: 0;
   left: 0;
   background-color: #2e2e2e;
-  overflow-x: hidden;
   padding: 0;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -54,10 +53,9 @@ html .sidenav ul li .nav-link {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 60px;
   text-align: center;
   margin: 0;
-  padding: 0 40px;
+  padding: 10px 40px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -71,21 +69,19 @@ body .sidenav ul li .nav-link:hover,
 html .sidenav ul li .nav-link:hover {
   color: #fff;
   background-color: #f1f1f180;
-  transition: all ease-in-out 0.5s;
 }
 
 body .sidenav ul li a.active,
 html .sidenav ul li a.active {
-  background-color: #f1f1f180;
-  color: #000;
+  background-color: #0085da;
+  color: #fff;
 }
 
 body .jumbotron,
 html .jumbotron {
-  background-color: #2e2e2e;
+  background-color: #494949;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(100%);
   min-height: 650px;
   margin-bottom: 0;
   display: flex;
@@ -107,17 +103,19 @@ html .jumbotron {
   }
 }
 
-body .jumbotron a,
-html .jumbotron a {
-  border: 1px solid #fff;
+body .jumbotron a.btn,
+html .jumbotron a.btn {
+  background-color: #0085da;
   color: #fff;
+  font-size: 1.5rem;
   margin-top: 20px;
-  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
 }
 
-body .jumbotron a:hover,
-html .jumbotron a:hover {
+body .jumbotron a.btn:hover,
+html .jumbotron a.btn:hover {
   text-decoration: none;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 565px) {
@@ -129,7 +127,7 @@ html .jumbotron a:hover {
 
 body .content .about-me,
 html .content .about-me {
-  background-image: url(/images/about.png);
+  background-image: url(/images/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -174,38 +172,61 @@ html .content .about-text p {
 
 body .content .about-text a,
 html .content .about-text a {
+  background-color: #0085da;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
+}
+
+body .content .about-text a:hover,
+html .content .about-text a:hover {
+  text-decoration: none;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body .content .skills .nav-link,
-html .content .skills .nav-link {
+body .content .skills .nav-tabs,
+html .content .skills .nav-tabs {
+  border-bottom: none;
+}
+
+body .content .skills .nav-tabs .nav-link,
+html .content .skills .nav-tabs .nav-link {
   font-size: 1.5rem;
   font-weight: bold;
   color: #000;
 }
 
-body .content .skills .nav-link:active,
-html .content .skills .nav-link:active {
-  border: 1px solid #2e2e2e;
-  border-radius: 5px;
-}
-
 @media only screen and (max-width: 800px) {
-  body .content .skills .nav-link,
-  html .content .skills .nav-link {
+  body .content .skills .nav-tabs .nav-link,
+  html .content .skills .nav-tabs .nav-link {
     text-align: center;
     border: none;
   }
-  body .content .skills .nav-link:active,
-  html .content .skills .nav-link:active {
+  body .content .skills .nav-tabs .nav-link:active,
+  html .content .skills .nav-tabs .nav-link:active {
     border: 1px solid #2e2e2e;
     border-radius: 5px;
   }
-  body .content .skills .nav-link:focus,
-  html .content .skills .nav-link:focus {
+  body .content .skills .nav-tabs .nav-link:focus,
+  html .content .skills .nav-tabs .nav-link:focus {
     border: 1px solid #2e2e2e;
     border-radius: 5px;
   }
+}
+
+body .content .skills .nav-tabs .nav-link.active,
+html .content .skills .nav-tabs .nav-link.active {
+  border: 2px solid #0085da;
+  background-color: #0085da;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
+}
+
+body .content .skills .nav-tabs .nav-link.active:hover,
+html .content .skills .nav-tabs .nav-link.active:hover {
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body .content .skills #frontend,
@@ -232,7 +253,7 @@ html .content .projects-header {
 
 body .content .projects-header .projects-header_img,
 html .content .projects-header .projects-header_img {
-  background-image: url(/images/project.png);
+  background-image: url(/images/projects.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(80%);
@@ -321,6 +342,14 @@ html .content .projects-gallery .gallery-row .gallery-image img {
   filter: grayscale(100%);
 }
 
+body .content .projects-gallery .gallery-row .gallery-image:hover,
+html .content .projects-gallery .gallery-row .gallery-image:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
 body .content .projects-gallery .gallery-row .gallery-image:hover img,
 html .content .projects-gallery .gallery-row .gallery-image:hover img {
   filter: grayscale(0);
@@ -344,7 +373,7 @@ html .content .projects-gallery .gallery-row .project-line .line-horizontal {
   top: 50%;
   left: 0;
   height: 5px;
-  background-color: #f1f1f1;
+  background-color: #c5c5c5;
   width: 95%;
 }
 
@@ -354,7 +383,7 @@ html .content .projects-gallery .gallery-row .project-line .line-vertical_first 
   left: 50%;
   top: 50%;
   height: 50%;
-  background-color: #f1f1f1;
+  background-color: #c5c5c5;
   width: 5px;
 }
 
@@ -364,7 +393,7 @@ html .content .projects-gallery .gallery-row .project-line .line-vertical_last {
   left: 50%;
   top: 0;
   height: 50%;
-  background-color: #f1f1f1;
+  background-color: #c5c5c5;
   width: 5px;
 }
 
@@ -374,7 +403,7 @@ html .content .projects-gallery .gallery-row .project-line .line-vertical {
   left: 50%;
   top: 0;
   height: 100%;
-  background-color: #f1f1f1;
+  background-color: #c5c5c5;
   width: 5px;
 }
 
@@ -393,6 +422,12 @@ html .content .projects-gallery .gallery-row .project-description {
   align-items: center;
   padding: 30px 5px;
   margin-top: 50px;
+}
+
+body .content .projects-gallery .gallery-row .project-description h2,
+html .content .projects-gallery .gallery-row .project-description h2 {
+  color: #006eb3;
+  font-weight: bold;
 }
 
 body .content .projects-gallery .gallery-row .project-description span,
@@ -431,17 +466,23 @@ html .content .contact-panel label {
   font-weight: bold;
 }
 
+body .content .contact-panel .form-control,
+html .content .contact-panel .form-control {
+  border: 2px solid #007aca;
+}
+
 body .content .contact-panel .btn-send,
 html .content .contact-panel .btn-send {
-  font-size: 1.3rem;
+  background-color: #0085da;
+  color: #fff;
+  font-size: 1.5rem;
   margin-top: 20px;
-  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
 }
 
 body .content .contact-panel .btn-send:hover,
 html .content .contact-panel .btn-send:hover {
-  background-color: #2e2e2e;
-  color: #fff;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 765px) {
@@ -455,6 +496,7 @@ html .content .contact-panel .btn-send:hover {
 body .content .contact-panel .text-required,
 html .content .contact-panel .text-required {
   text-align: left;
+  font-size: 1.1rem;
   margin: 10px 0;
 }
 

@@ -12,7 +12,6 @@ html {
     top: 0;
     left: 0;
     background-color: #2e2e2e;
-    overflow-x: hidden;
     padding: 0;
     box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
       0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -41,10 +40,9 @@ html {
           display: flex;
           justify-content: space-evenly;
           align-items: center;
-          height: 60px;
           text-align: center;
           margin: 0;
-          padding: 0 40px;
+          padding: 10px 40px;
           @media only screen and (max-width: 800px) {
             width: 100%;
           }
@@ -52,24 +50,21 @@ html {
           &:hover {
             color: #fff;
             background-color: #f1f1f180;
-            transition: all ease-in-out 0.5s;
           }
         }
 
         a.active {
-          background-color: #f1f1f180;
-          color: #000;
+          background-color: #0085da;
+          color: #fff;
         }
       }
     }
   }
 
   .jumbotron {
-    background-color: #2e2e2e;
-    // background-image: url(/images/about.png);
+    background-color: #494949;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(100%);
     min-height: 650px;
     margin-bottom: 0;
     display: flex;
@@ -84,15 +79,17 @@ html {
         font-size: 2rem;
       }
     }
-    a {
-      border: 1px solid #fff;
+    a.btn {
+      background-color: #0085da;
       color: #fff;
+      font-size: 1.5rem;
       margin-top: 20px;
-      box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2),
+        0 3px 14px 0 rgba(0, 0, 0, 0.19);
       &:hover {
         text-decoration: none;
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
     }
     @media only screen and (max-width: 565px) {
@@ -104,7 +101,7 @@ html {
 
   .content {
     .about-me {
-      background-image: url(/images/about.png);
+      background-image: url(/images/about.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
@@ -138,34 +135,56 @@ html {
       }
 
       a {
-        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
-          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #0085da;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2),
+          0 3px 14px 0 rgba(0, 0, 0, 0.19);
+
+        &:hover {
+          text-decoration: none;
+          box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
       }
     }
 
     .skills {
-      .nav-link {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #000;
+      .nav-tabs {
+        border-bottom: none;
+        .nav-link {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #000;
 
-      &:active {
-        border: 1px solid #2e2e2e;
-        border-radius: 5px;
-      }
+          @media only screen and (max-width: 800px) {
+            text-align: center;
+            border: none;
 
-        @media only screen and (max-width: 800px) {
-          text-align: center;
-          border: none;
+            &:active {
+              border: 1px solid #2e2e2e;
+              border-radius: 5px;
+            }
 
-          &:active {
-            border: 1px solid #2e2e2e;
-            border-radius: 5px;
+            &:focus {
+              border: 1px solid #2e2e2e;
+              border-radius: 5px;
+            }
           }
+        }
 
-          &:focus {
-            border: 1px solid #2e2e2e;
-            border-radius: 5px;
+        .nav-link.active {
+          border: 2px solid #0085da;
+          background-color: #0085da;
+          color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2),
+            0 3px 14px 0 rgba(0, 0, 0, 0.19);
+
+          &:hover {
+            box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
           }
         }
       }
@@ -187,7 +206,7 @@ html {
       padding-right: 0 !important;
 
       .projects-header_img {
-        background-image: url(/images/project.png);
+        background-image: url(/images/projects.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         filter: grayscale(80%);
@@ -258,6 +277,10 @@ html {
           }
 
           &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
             img {
               filter: grayscale(0);
               transition: all 2s;
@@ -276,7 +299,7 @@ html {
             top: 50%;
             left: 0;
             height: 5px;
-            background-color: #f1f1f1;
+            background-color: #c5c5c5;
             width: 95%;
           }
 
@@ -285,7 +308,7 @@ html {
             left: 50%;
             top: 50%;
             height: 50%;
-            background-color: #f1f1f1;
+            background-color: #c5c5c5;
             width: 5px;
           }
 
@@ -294,7 +317,7 @@ html {
             left: 50%;
             top: 0;
             height: 50%;
-            background-color: #f1f1f1;
+            background-color: #c5c5c5;
             width: 5px;
           }
 
@@ -303,7 +326,7 @@ html {
             left: 50%;
             top: 0;
             height: 100%;
-            background-color: #f1f1f1;
+            background-color: #c5c5c5;
             width: 5px;
           }
 
@@ -319,6 +342,11 @@ html {
           align-items: center;
           padding: 30px 5px;
           margin-top: 50px;
+
+          h2 {
+            color: #006eb3;
+            font-weight: bold;
+          }
 
           span {
             margin-bottom: 10px;
@@ -351,14 +379,21 @@ html {
         font-weight: bold;
       }
 
+      .form-control {
+        border: 2px solid #007aca;
+      }
+
       .btn-send {
-        font-size: 1.3rem;
+        background-color: #0085da;
+        color: #fff;
+        font-size: 1.5rem;
         margin-top: 20px;
-        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
-          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2),
+          0 3px 14px 0 rgba(0, 0, 0, 0.19);
+
         &:hover {
-          background-color: #2e2e2e;
-          color: #fff;
+          box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
         @media only screen and (max-width: 765px) {
           margin: 0 auto;
@@ -368,6 +403,7 @@ html {
 
       .text-required {
         text-align: left;
+        font-size: 1.1rem;
         margin: 10px 0;
         @media only screen and (max-width: 415px) {
           font-size: 1rem;
