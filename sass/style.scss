@@ -111,6 +111,10 @@ html {
       width: 100%;
       height: auto;
       filter: grayscale(100%);
+      &:hover {
+        filter: grayscale(0);
+        transition: all 2s;
+      }
     }
 
     .about-text {
@@ -141,8 +145,6 @@ html {
     }
 
     .skills {
-      // width: 80%;
-      // height: auto;
       .nav-link {
         font-size: 1.5rem;
         font-weight: bold;
@@ -352,6 +354,8 @@ html {
       .btn-send {
         font-size: 1.3rem;
         margin-top: 20px;
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
         &:hover {
           background-color: #2e2e2e;
           color: #fff;

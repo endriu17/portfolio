@@ -138,6 +138,12 @@ html .content .about-me {
   filter: grayscale(100%);
 }
 
+body .content .about-me:hover,
+html .content .about-me:hover {
+  filter: grayscale(0);
+  transition: all 2s;
+}
+
 body .content .about-text,
 html .content .about-text {
   min-height: 550px;
@@ -429,6 +435,7 @@ body .content .contact-panel .btn-send,
 html .content .contact-panel .btn-send {
   font-size: 1.3rem;
   margin-top: 20px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body .content .contact-panel .btn-send:hover,
