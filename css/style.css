@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   position: relative;
@@ -6,31 +7,48 @@ body, html {
   scroll-behavior: smooth;
 }
 
-body .sidenav, html .sidenav {
+body .sidenav,
+html .sidenav {
   width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background: #000000b9;
+  background-color: #2e2e2e;
   overflow-x: hidden;
   padding: 0;
-  height: 60px;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body .sidenav ul, html .sidenav ul {
+body .sidenav ul,
+html .sidenav ul {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-body .sidenav ul .nav-link, html .sidenav ul .nav-link {
+@media only screen and (max-width: 800px) {
+  body .sidenav ul,
+  html .sidenav ul {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body .sidenav ul li,
+  html .sidenav ul li {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+body .sidenav ul li .nav-link,
+html .sidenav ul li .nav-link {
   text-decoration: none;
   font-size: 25px;
   color: #fff;
@@ -43,44 +61,75 @@ body .sidenav ul .nav-link, html .sidenav ul .nav-link {
   padding: 0 40px;
 }
 
-body .sidenav ul .nav-link:hover, html .sidenav ul .nav-link:hover {
+@media only screen and (max-width: 800px) {
+  body .sidenav ul li .nav-link,
+  html .sidenav ul li .nav-link {
+    width: 100%;
+  }
+}
+
+body .sidenav ul li .nav-link:hover,
+html .sidenav ul li .nav-link:hover {
   color: #fff;
   background-color: #f1f1f180;
   transition: all ease-in-out 0.5s;
 }
 
-body .sidenav ul a.active, html .sidenav ul a.active {
+body .sidenav ul li a.active,
+html .sidenav ul li a.active {
   background-color: #f1f1f180;
   color: #000;
 }
 
-body .jumbotron, html .jumbotron {
+body .jumbotron,
+html .jumbotron {
   background-color: #2e2e2e;
-  height: 550px;
-  margin-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  min-height: 650px;
   margin-bottom: 0;
   display: flex;
   align-items: center;
 }
 
-body .jumbotron a, html .jumbotron a {
+@media only screen and (max-width: 800px) {
+  body .jumbotron,
+  html .jumbotron {
+    margin-top: 175px;
+    min-height: auto;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  body .jumbotron .display-1,
+  html .jumbotron .display-1 {
+    font-size: 2rem;
+  }
+}
+
+body .jumbotron a,
+html .jumbotron a {
   border: 1px solid #fff;
   color: #fff;
   margin-top: 20px;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body .jumbotron a:hover, html .jumbotron a:hover {
+body .jumbotron a:hover,
+html .jumbotron a:hover {
   text-decoration: none;
 }
 
 @media only screen and (max-width: 565px) {
-  body .jumbotron h1, html .jumbotron h1 {
+  body .jumbotron h1,
+  html .jumbotron h1 {
     font-size: 50px;
   }
 }
 
-body .content .about-me, html .content .about-me {
+body .content .about-me,
+html .content .about-me {
   background-image: url(/images/about.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,41 +138,77 @@ body .content .about-me, html .content .about-me {
   filter: grayscale(100%);
 }
 
-body .content .about-text, html .content .about-text {
-  height: 550px;
+body .content .about-text,
+html .content .about-text {
+  min-height: 550px;
   padding: 30px;
   background-color: #f1f1f1;
 }
 
-body .content .about-text h1, html .content .about-text h1 {
+@media only screen and (max-width: 800px) {
+  body .content .about-text,
+  html .content .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+body .content .about-text h1,
+html .content .about-text h1 {
   margin: 30px 0;
   text-align: center;
 }
 
-body .content .about-text p, html .content .about-text p {
+body .content .about-text p,
+html .content .about-text p {
   font-size: 1.5rem;
   text-align: left;
 }
 
-body .content .about-text a, html .content .about-text a {
+body .content .about-text a,
+html .content .about-text a {
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body .content .skills, html .content .skills {
-  width: 80%;
-}
-
-body .content .skills .nav-link, html .content .skills .nav-link {
+body .content .skills .nav-link,
+html .content .skills .nav-link {
   font-size: 1.5rem;
   font-weight: bold;
   color: #000;
+}
+
+body .content .skills .nav-link:active,
+html .content .skills .nav-link:active {
+  border: 1px solid #2e2e2e;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  body .content .skills .nav-link,
+  html .content .skills .nav-link {
+    text-align: center;
+    border: none;
+  }
+  body .content .skills .nav-link:active,
+  html .content .skills .nav-link:active {
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+  }
+  body .content .skills .nav-link:focus,
+  html .content .skills .nav-link:focus {
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+  }
 }
 
 body .content .skills #frontend,
 body .content .skills #project-managing,
 body .content .skills #personal-skills,
 body .content .skills #languages,
-body .content .skills #other, html .content .skills #frontend,
+body .content .skills #other,
+html .content .skills #frontend,
 html .content .skills #project-managing,
 html .content .skills #personal-skills,
 html .content .skills #languages,
@@ -134,12 +219,14 @@ html .content .skills #other {
   min-height: 150px;
 }
 
-body .content .projects-header, html .content .projects-header {
+body .content .projects-header,
+html .content .projects-header {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-body .content .projects-header .projects-header_img, html .content .projects-header .projects-header_img {
+body .content .projects-header .projects-header_img,
+html .content .projects-header .projects-header_img {
   background-image: url(/images/project.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,7 +240,8 @@ body .content .projects-header .projects-header_img, html .content .projects-hea
   align-items: flex-end;
 }
 
-body .content .projects-header .projects-header_img .projects-header_text, html .content .projects-header .projects-header_img .projects-header_text {
+body .content .projects-header .projects-header_img .projects-header_text,
+html .content .projects-header .projects-header_img .projects-header_text {
   padding: 100px;
   display: flex;
   flex-direction: column;
@@ -164,21 +252,40 @@ body .content .projects-header .projects-header_img .projects-header_text, html 
   width: 70%;
 }
 
-body .content .projects-header .projects-header_img .projects-header_text h1, html .content .projects-header .projects-header_img .projects-header_text h1 {
+@media only screen and (max-width: 800px) {
+  body .content .projects-header .projects-header_img .projects-header_text,
+  html .content .projects-header .projects-header_img .projects-header_text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  body .content .projects-header .projects-header_img .projects-header_text,
+  html .content .projects-header .projects-header_img .projects-header_text {
+    padding: 10px;
+    background: none;
+  }
+}
+
+body .content .projects-header .projects-header_img .projects-header_text h1,
+html .content .projects-header .projects-header_img .projects-header_text h1 {
   font-size: 3.5rem;
   margin-bottom: 30px;
 }
 
-body .content .projects-header .projects-header_img .projects-header_text p, html .content .projects-header .projects-header_img .projects-header_text p {
+body .content .projects-header .projects-header_img .projects-header_text p,
+html .content .projects-header .projects-header_img .projects-header_text p {
   font-size: 1.5rem;
 }
 
-body .content .projects-gallery, html .content .projects-gallery {
+body .content .projects-gallery,
+html .content .projects-gallery {
   margin-top: 100px;
   max-width: 1200px;
 }
 
-body .content .projects-gallery .gallery-row .gallery-image, html .content .projects-gallery .gallery-row .gallery-image {
+body .content .projects-gallery .gallery-row .gallery-image,
+html .content .projects-gallery .gallery-row .gallery-image {
   margin: 70px 0;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -188,38 +295,45 @@ body .content .projects-gallery .gallery-row .gallery-image, html .content .proj
   flex-wrap: wrap;
 }
 
-body .content .projects-gallery .gallery-row .gallery-image .project-link, html .content .projects-gallery .gallery-row .gallery-image .project-link {
+body .content .projects-gallery .gallery-row .gallery-image .project-link,
+html .content .projects-gallery .gallery-row .gallery-image .project-link {
   opacity: 0;
   position: absolute;
   background-color: #0000009d;
   padding: 10px;
+  text-decoration: none;
   font-size: 28px;
   color: #fff;
   transition: all 3s;
 }
 
-body .content .projects-gallery .gallery-row .gallery-image img, html .content .projects-gallery .gallery-row .gallery-image img {
+body .content .projects-gallery .gallery-row .gallery-image img,
+html .content .projects-gallery .gallery-row .gallery-image img {
   width: 400px;
   height: auto;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   filter: grayscale(100%);
 }
 
-body .content .projects-gallery .gallery-row .gallery-image:hover img, html .content .projects-gallery .gallery-row .gallery-image:hover img {
+body .content .projects-gallery .gallery-row .gallery-image:hover img,
+html .content .projects-gallery .gallery-row .gallery-image:hover img {
   filter: grayscale(0);
   transition: all 2s;
 }
 
-body .content .projects-gallery .gallery-row .gallery-image:hover .project-link, html .content .projects-gallery .gallery-row .gallery-image:hover .project-link {
+body .content .projects-gallery .gallery-row .gallery-image:hover .project-link,
+html .content .projects-gallery .gallery-row .gallery-image:hover .project-link {
   opacity: 1;
   transition: all 2s;
 }
 
-body .content .projects-gallery .gallery-row .project-line, html .content .projects-gallery .gallery-row .project-line {
+body .content .projects-gallery .gallery-row .project-line,
+html .content .projects-gallery .gallery-row .project-line {
   position: relative;
 }
 
-body .content .projects-gallery .gallery-row .project-line .line-horizontal, html .content .projects-gallery .gallery-row .project-line .line-horizontal {
+body .content .projects-gallery .gallery-row .project-line .line-horizontal,
+html .content .projects-gallery .gallery-row .project-line .line-horizontal {
   position: absolute;
   top: 50%;
   left: 0;
@@ -228,7 +342,8 @@ body .content .projects-gallery .gallery-row .project-line .line-horizontal, htm
   width: 95%;
 }
 
-body .content .projects-gallery .gallery-row .project-line .line-vertical_first, html .content .projects-gallery .gallery-row .project-line .line-vertical_first {
+body .content .projects-gallery .gallery-row .project-line .line-vertical_first,
+html .content .projects-gallery .gallery-row .project-line .line-vertical_first {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -237,7 +352,8 @@ body .content .projects-gallery .gallery-row .project-line .line-vertical_first,
   width: 5px;
 }
 
-body .content .projects-gallery .gallery-row .project-line .line-vertical_last, html .content .projects-gallery .gallery-row .project-line .line-vertical_last {
+body .content .projects-gallery .gallery-row .project-line .line-vertical_last,
+html .content .projects-gallery .gallery-row .project-line .line-vertical_last {
   position: absolute;
   left: 50%;
   top: 0;
@@ -246,7 +362,8 @@ body .content .projects-gallery .gallery-row .project-line .line-vertical_last, 
   width: 5px;
 }
 
-body .content .projects-gallery .gallery-row .project-line .line-vertical, html .content .projects-gallery .gallery-row .project-line .line-vertical {
+body .content .projects-gallery .gallery-row .project-line .line-vertical,
+html .content .projects-gallery .gallery-row .project-line .line-vertical {
   position: absolute;
   left: 50%;
   top: 0;
@@ -256,12 +373,14 @@ body .content .projects-gallery .gallery-row .project-line .line-vertical, html 
 }
 
 @media only screen and (max-width: 565px) {
-  body .content .projects-gallery .gallery-row .project-line, html .content .projects-gallery .gallery-row .project-line {
+  body .content .projects-gallery .gallery-row .project-line,
+  html .content .projects-gallery .gallery-row .project-line {
     display: none;
   }
 }
 
-body .content .projects-gallery .gallery-row .project-description, html .content .projects-gallery .gallery-row .project-description {
+body .content .projects-gallery .gallery-row .project-description,
+html .content .projects-gallery .gallery-row .project-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -270,52 +389,77 @@ body .content .projects-gallery .gallery-row .project-description, html .content
   margin-top: 50px;
 }
 
-body .content .projects-gallery .gallery-row .project-description span, html .content .projects-gallery .gallery-row .project-description span {
+body .content .projects-gallery .gallery-row .project-description span,
+html .content .projects-gallery .gallery-row .project-description span {
   margin-bottom: 10px;
   font-style: italic;
 }
 
-body .content .projects-gallery .gallery-row .project-description p, html .content .projects-gallery .gallery-row .project-description p {
+body .content .projects-gallery .gallery-row .project-description p,
+html .content .projects-gallery .gallery-row .project-description p {
   font-size: 1.5rem;
 }
 
-body .content .contact-panel, html .content .contact-panel {
+body .content .contact-panel,
+html .content .contact-panel {
   margin-top: 100px;
   max-width: 1200px;
 }
 
 body .content .contact-panel h1,
-body .content .contact-panel h3, html .content .contact-panel h1,
+body .content .contact-panel h3,
+html .content .contact-panel h1,
 html .content .contact-panel h3 {
   text-align: center;
 }
 
-body .content .contact-panel p, html .content .contact-panel p {
+body .content .contact-panel p,
+html .content .contact-panel p {
   font-size: 1.5rem;
 }
 
-body .content .contact-panel label, html .content .contact-panel label {
+body .content .contact-panel label,
+html .content .contact-panel label {
   padding-left: 10px;
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-body .content .contact-panel .btn-send, html .content .contact-panel .btn-send {
+body .content .contact-panel .btn-send,
+html .content .contact-panel .btn-send {
   font-size: 1.3rem;
   margin-top: 20px;
 }
 
-body .content .contact-panel .btn-send:hover, html .content .contact-panel .btn-send:hover {
+body .content .contact-panel .btn-send:hover,
+html .content .contact-panel .btn-send:hover {
   background-color: #2e2e2e;
   color: #fff;
 }
 
-body .content .contact-panel .text-required, html .content .contact-panel .text-required {
+@media only screen and (max-width: 765px) {
+  body .content .contact-panel .btn-send,
+  html .content .contact-panel .btn-send {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+body .content .contact-panel .text-required,
+html .content .contact-panel .text-required {
   text-align: left;
   margin: 10px 0;
 }
 
-body .content .contact-panel p, html .content .contact-panel p {
+@media only screen and (max-width: 415px) {
+  body .content .contact-panel .text-required,
+  html .content .contact-panel .text-required {
+    font-size: 1rem;
+  }
+}
+
+body .content .contact-panel p,
+html .content .contact-panel p {
   width: 70%;
   text-align: center;
   display: block;
@@ -323,34 +467,47 @@ body .content .contact-panel p, html .content .contact-panel p {
 }
 
 @media only screen and (max-width: 765px) {
-  body .content .contact-panel p, html .content .contact-panel p {
+  body .content .contact-panel p,
+  html .content .contact-panel p {
     width: 100%;
   }
 }
 
-body .content .contact-panel .contact-social .social-nettwork, html .content .contact-panel .contact-social .social-nettwork {
+body .content .contact-panel .contact-social .social-nettwork,
+html .content .contact-panel .contact-social .social-nettwork {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50%;
 }
 
-body .content .contact-panel .contact-social .social-nettwork a, html .content .contact-panel .contact-social .social-nettwork a {
+body .content .contact-panel .contact-social .social-nettwork a,
+html .content .contact-panel .contact-social .social-nettwork a {
   color: #2e2e2e;
   margin: 10px;
 }
 
-body .content .contact-panel .contact-social .social-nettwork a:hover, html .content .contact-panel .contact-social .social-nettwork a:hover {
+body .content .contact-panel .contact-social .social-nettwork a:hover,
+html .content .contact-panel .contact-social .social-nettwork a:hover {
   color: #4b4b4bed;
 }
 
 @media only screen and (max-width: 565px) {
-  body .content .contact-panel .contact-social .social-nettwork, html .content .contact-panel .contact-social .social-nettwork {
+  body .content .contact-panel .contact-social .social-nettwork,
+  html .content .contact-panel .contact-social .social-nettwork {
     flex-direction: row;
   }
 }
 
-body .footer, html .footer {
+@media only screen and (max-width: 565px) {
+  body .content .contact-panel .contact-social h3,
+  html .content .contact-panel .contact-social h3 {
+    font-size: 1.3rem;
+  }
+}
+
+body .footer,
+html .footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -360,7 +517,8 @@ body .footer, html .footer {
   margin-top: 30px;
 }
 
-body .footer p, html .footer p {
+body .footer p,
+html .footer p {
   font-size: 1.5rem;
   margin: 0;
 }

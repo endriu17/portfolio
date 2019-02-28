@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   position: relative;
@@ -11,10 +12,9 @@ body, html {
     z-index: 1;
     top: 0;
     left: 0;
-    background: #000000b9;
+    background-color: #2e2e2e;
     overflow-x: hidden;
     padding: 0;
-    height: 60px;
     box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2),
       0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -22,46 +22,69 @@ body, html {
       width: 100%;
       margin: 0;
       padding: 0;
-      height: 60px;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-
-      .nav-link {
-        text-decoration: none;
-        font-size: 25px;
-        color: #fff;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 60px;
-        text-align: center;
-        margin: 0;
-        padding: 0 40px;
-
-        &:hover {
-          color: #fff;
-          background-color: #f1f1f180;
-          transition: all ease-in-out 0.5s;
-        }
+      @media only screen and (max-width: 800px) {
+        flex-wrap: wrap;
       }
+      li {
+        @media only screen and (max-width: 800px) {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+        }
+        .nav-link {
+          text-decoration: none;
+          font-size: 25px;
+          color: #fff;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 60px;
+          text-align: center;
+          margin: 0;
+          padding: 0 40px;
+          @media only screen and (max-width: 800px) {
+            width: 100%;
+          }
 
-      a.active {
-        background-color: #f1f1f180;
-        color: #000;
+          &:hover {
+            color: #fff;
+            background-color: #f1f1f180;
+            transition: all ease-in-out 0.5s;
+          }
+        }
+
+        a.active {
+          background-color: #f1f1f180;
+          color: #000;
+        }
       }
     }
   }
 
   .jumbotron {
     background-color: #2e2e2e;
-    height: 550px;
-    margin-top: 60px;
+    // background-image: url(/images/about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    min-height: 650px;
     margin-bottom: 0;
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 800px) {
+      margin-top: 175px;
+      min-height: auto;
+    }
 
+    .display-1 {
+      @media only screen and (max-width: 415px) {
+        font-size: 2rem;
+      }
+    }
     a {
       border: 1px solid #fff;
       color: #fff;
@@ -91,9 +114,15 @@ body, html {
     }
 
     .about-text {
-      height: 550px;
+      min-height: 550px;
       padding: 30px;
       background-color: #f1f1f1;
+      @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
       h1 {
         margin: 30px 0;
@@ -112,11 +141,32 @@ body, html {
     }
 
     .skills {
-      width: 80%;
+      // width: 80%;
+      // height: auto;
       .nav-link {
         font-size: 1.5rem;
         font-weight: bold;
         color: #000;
+
+      &:active {
+        border: 1px solid #2e2e2e;
+        border-radius: 5px;
+      }
+
+        @media only screen and (max-width: 800px) {
+          text-align: center;
+          border: none;
+
+          &:active {
+            border: 1px solid #2e2e2e;
+            border-radius: 5px;
+          }
+
+          &:focus {
+            border: 1px solid #2e2e2e;
+            border-radius: 5px;
+          }
+        }
       }
 
       #frontend,
@@ -156,6 +206,13 @@ body, html {
           color: #fff;
           background-color: #2e2e2ebe;
           width: 70%;
+          @media only screen and (max-width: 800px) {
+            width: 100%;
+          }
+          @media only screen and (max-width: 415px) {
+            padding: 10px;
+            background: none;
+          }
           h1 {
             font-size: 3.5rem;
             margin-bottom: 30px;
@@ -185,6 +242,7 @@ body, html {
             position: absolute;
             background-color: #0000009d;
             padding: 10px;
+            text-decoration: none;
             font-size: 28px;
             color: #fff;
             transition: all 3s;
@@ -298,11 +356,18 @@ body, html {
           background-color: #2e2e2e;
           color: #fff;
         }
+        @media only screen and (max-width: 765px) {
+          margin: 0 auto;
+          display: block;
+        }
       }
 
       .text-required {
         text-align: left;
         margin: 10px 0;
+        @media only screen and (max-width: 415px) {
+          font-size: 1rem;
+        }
       }
 
       p {
@@ -321,6 +386,7 @@ body, html {
           justify-content: center;
           align-items: center;
           height: 50%;
+
           a {
             color: #2e2e2e;
             margin: 10px;
@@ -331,6 +397,11 @@ body, html {
           }
           @media only screen and (max-width: 565px) {
             flex-direction: row;
+          }
+        }
+        h3 {
+          @media only screen and (max-width: 565px) {
+            font-size: 1.3rem;
           }
         }
       }
