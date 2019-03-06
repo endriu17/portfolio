@@ -10,10 +10,11 @@
     "init:dirs": "mkdir sass css vendor images js",
     "init:files": "touch README.md index.html styleguide.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer && npm run test",
+    "build": "npm-run-all build:* test",
     "build:clean": "rimraf css/*",
-    "build:sass": "node-sass --sourcemap=none --update sass:css",
+    "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
+    "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "parallelshell \"npm run watch:sassprefixer\" \"npm run watch:browsersync\"",
     "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\"",
     "watch:sassprefixer": "onchange -d 100 sass/style.scss -- node-sass --output-style expanded --source-map true -o css sass && autoprefixer-cli -o css/style.prefixed.css css/style.css"
