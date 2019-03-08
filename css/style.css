@@ -28,7 +28,7 @@ body .jumbotron, html .jumbotron { background-color: #494949; background-repeat:
 
 body .jumbotron a.btn, html .jumbotron a.btn { background-color: #0085da; color: #fff; font-size: 1.5rem; margin-top: 20px; }
 
-body .jumbotron a.btn:hover, html .jumbotron a.btn:hover { text-decoration: none; }
+body .jumbotron a.btn:hover, html .jumbotron a.btn:hover { text-decoration: none; background-color: #0086dad8; }
 
 @media only screen and (max-width: 565px) { body .jumbotron h1, html .jumbotron h1 { font-size: 50px; } }
 
