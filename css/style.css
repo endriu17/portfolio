@@ -18,7 +18,7 @@ body .sidenav ul li .nav-link:hover, html .sidenav ul li .nav-link:hover { color
 
 body .sidenav ul li a.active, html .sidenav ul li a.active { background-color: #0085da; color: #fff; }
 
-body .sidenav ul li a.active:hover, html .sidenav ul li a.active:hover { color: #fff; }
+body .sidenav ul li a.active:hover, html .sidenav ul li a.active:hover { color: #fff; background-color: #0086dad8; }
 
 body .jumbotron, html .jumbotron { background-color: #494949; background-repeat: no-repeat; background-size: cover; min-height: 650px; margin-bottom: 0; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
@@ -28,7 +28,7 @@ body .jumbotron, html .jumbotron { background-color: #494949; background-repeat:
 
 body .jumbotron a.btn, html .jumbotron a.btn { background-color: #0085da; color: #fff; font-size: 1.5rem; margin-top: 20px; }
 
-body .jumbotron a.btn:hover, html .jumbotron a.btn:hover { text-decoration: none; box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+body .jumbotron a.btn:hover, html .jumbotron a.btn:hover { text-decoration: none; }
 
 @media only screen and (max-width: 565px) { body .jumbotron h1, html .jumbotron h1 { font-size: 50px; } }
 
@@ -46,7 +46,7 @@ body .content .about-text p, html .content .about-text p { font-size: 1.5rem; te
 
 body .content .about-text a, html .content .about-text a { margin-top: 20px; background-color: #0085da; border: none; color: #fff; font-size: 1.5rem; }
 
-body .content .about-text a:hover, html .content .about-text a:hover { text-decoration: none; box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+body .content .about-text a:hover, html .content .about-text a:hover { text-decoration: none; background-color: #0086dad8; }
 
 body .content .skills .nav-tabs, html .content .skills .nav-tabs { border-bottom: none; }
 
@@ -58,7 +58,7 @@ body .content .skills .nav-tabs .nav-link, html .content .skills .nav-tabs .nav-
 
 body .content .skills .nav-tabs .nav-link.active, html .content .skills .nav-tabs .nav-link.active { border: 2px solid #0085da; background-color: #0085da; color: #fff; border-radius: 5px; }
 
-body .content .skills .nav-tabs .nav-link.active:hover, html .content .skills .nav-tabs .nav-link.active:hover { box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+body .content .skills .nav-tabs .nav-link.active:hover, html .content .skills .nav-tabs .nav-link.active:hover { background-color: #0086dad8; }
 
 body .content .skills #frontend, body .content .skills #project-managing, body .content .skills #personal-skills, body .content .skills #languages, body .content .skills #other, html .content .skills #frontend, html .content .skills #project-managing, html .content .skills #personal-skills, html .content .skills #languages, html .content .skills #other { font-size: 1.5rem; text-align: center; margin-bottom: 50px; min-height: 150px; }
 
@@ -84,7 +84,7 @@ body .content .projects-gallery .gallery-row .gallery-image .project-link, html 
 
 body .content .projects-gallery .gallery-row .gallery-image img, html .content .projects-gallery .gallery-row .gallery-image img { width: 400px; height: auto; filter: grayscale(100%); }
 
-body .content .projects-gallery .gallery-row .gallery-image:hover, html .content .projects-gallery .gallery-row .gallery-image:hover { transition: all 0.5s ease-out; box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+body .content .projects-gallery .gallery-row .gallery-image:hover, html .content .projects-gallery .gallery-row .gallery-image:hover { transition: all 0.5s ease-out; }
 
 body .content .projects-gallery .gallery-row .gallery-image:hover img, html .content .projects-gallery .gallery-row .gallery-image:hover img { filter: grayscale(0); transition: all 2s; }
 
@@ -122,7 +122,7 @@ body .content .contact-panel .form-control, html .content .contact-panel .form-c
 
 body .content .contact-panel .btn-send, html .content .contact-panel .btn-send { background-color: #0085da; color: #fff; font-size: 1.5rem; margin-top: 20px; }
 
-body .content .contact-panel .btn-send:hover, html .content .contact-panel .btn-send:hover { box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+body .content .contact-panel .btn-send:hover, html .content .contact-panel .btn-send:hover { background-color: #0086dad8; }
 
 @media only screen and (max-width: 765px) { body .content .contact-panel .btn-send, html .content .contact-panel .btn-send { margin: 0 auto; display: block; } }
 
