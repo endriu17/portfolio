@@ -620,24 +620,24 @@
         <h3>I am available for any job, big or small!</h3>
         <div class="row">
           <form
-            name="contact-me"
-            method="POST"
-            data-netlify="true"
+            method="post"
+            action="http://localhost:3005/contact"
             class="mt-md-5 col-md-6"
             id="contact-form"
+            role="form"
           >
             <div class="row">
               <div class="controls col-md-12">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label for="form_name">Name</label>
+                      <label>Name</label>
                       <input
                         id="name"
                         type="text"
                         name="name"
                         class="form-control"
-                        placeholder="Your name"
+                        placeholder="Ditt navn"
                         required="required"
                         data-error="Name is required."
                       />
@@ -648,13 +648,13 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label for="form_email">Email</label>
+                      <label>Email</label>
                       <input
                         id="form_email"
                         type="email"
                         name="email"
                         class="form-control"
-                        placeholder="Your email"
+                        placeholder="Epostadressen din"
                         required="required"
                         data-error="Valid email is required."
                       />
@@ -665,12 +665,12 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label for="form_message">Message</label>
+                      <label>Message</label>
                       <textarea
                         id="form_message"
                         name="message"
                         class="form-control"
-                        placeholder="Message for me"
+                        placeholder="Meldingen"
                         rows="4"
                         required="required"
                         data-error="Please, leave us a message."
@@ -678,12 +678,11 @@
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
-                  <div class="col-md-12" data-netlify-recaptcha="true"></div>
+                  <!-- <div class="col-md-12" data-netlify-recaptcha="true"></div> -->
                   <div class="col-md-12">
                     <button
                       type="submit"
                       class="btn btn-send"
-                      value="Send message"
                     >
                       Send message
                     </button>
@@ -692,7 +691,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <p class="text-muted text-required">
-                      <!-- <strong>*</strong> These fields are required. -->
+                      <!-- <strong>*</strong> Disse feltene er obligatoriske. -->
                     </p>
                   </div>
                 </div>

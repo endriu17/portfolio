@@ -8,20 +8,20 @@
     <title>Portfolio</title>
     <!-- Bootstrap CSS -->
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+    rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -612,18 +612,18 @@
         <h3>Jeg er klar for både små og store oppdrag!</h3>
         <div class="row">
           <form
-            name="contact-me"
-            method="POST"
-            data-netlify="true"
+            method="post"
+            action="http://localhost:3005/contact"
             class="mt-md-5 col-md-6"
             id="contact-form"
+            role="form"
           >
             <div class="row">
               <div class="controls col-md-12">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label for="form_name">Navn</label>
+                      <label>Navn</label>
                       <input
                         id="name"
                         type="text"
@@ -640,7 +640,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label for="form_email">Epost</label>
+                      <label>Epost</label>
                       <input
                         id="form_email"
                         type="email"
@@ -657,7 +657,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label for="form_message">Melding</label>
+                      <label>Melding</label>
                       <textarea
                         id="form_message"
                         name="message"
@@ -670,15 +670,15 @@
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
-                  <div class="col-md-12" data-netlify-recaptcha="true"></div>
+                  <!-- <div class="col-md-12" data-netlify-recaptcha="true"></div> -->
                   <div class="col-md-12">
                     <button
                       type="submit"
                       class="btn btn-send"
-                      value="Send message"
                     >
                       Send melding
                     </button>
+                    <p id="message-norsk"></p>
                   </div>
                 </div>
                 <div class="row">
@@ -730,6 +730,9 @@
       integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
       crossorigin="anonymous"
     ></script>
+    <script> 
+      var inline = 1; 
+    </script>
     <script src="/js/script.js"></script>
   </body>
 </html>
