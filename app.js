@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, '/')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use('/email', (req, res) => {
+app.post('/load', (req, res) => {
   let lang = process.env.LANGUAGE;
 
   const now = new Date()
@@ -40,8 +40,8 @@ app.use('/email', (req, res) => {
   let mailOptions = {
     from: `"Portfolio Contact" <${process.env.MY_USER}>`, // sender address
     cc: process.env.MY_USER, // list of receivers
-    subject: 'Visit site request', 
-    text: 'Your message was send', 
+    subject: 'Visit site request',
+    text: 'Your message was send',
     html: output // html body
   };
 
@@ -54,8 +54,10 @@ app.use('/email', (req, res) => {
   });
 });
 
+let message = false;
 app.post('/contact', (req, res) => {
   console.log(req.body.email);
+  res.status(404);
   const now = new Date()
     .toISOString()
     .replace(/T/, ' ')
@@ -85,21 +87,31 @@ app.post('/contact', (req, res) => {
   });
 
   let mailOptions = {
-    from: `"Portfolio Contact" <${process.env.MY_USER}>`, 
+    from: `"Portfolio Contact" <${process.env.MY_USER}>`,
     to: req.body.email,
     cc: process.env.MY_USER,
     subject: 'Contact Request',
     text: 'Your message was send',
-    html: output 
+    html: output
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return console.log(error);
     }
-    console.log(info);
+    message = true;
     res.redirect('/#contact');
   });
+});
+
+app.use('/message', (req, res) => {
+  if (!message) {
+    res.status(404);
+  } else {
+    res.status(200);
+    res.send({ message: message });
+  }
+  message = false;
 });
 
 app.listen(3005, () => console.log('Server started on port 3005...'));
