@@ -148,7 +148,7 @@ html .jumbotron a.btn:hover {
 
 body .content .about-me,
 html .content .about-me {
-  background-image: url(images/about.jpg);
+  background-image: url(./images/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -277,7 +277,7 @@ html .content .projects-header {
 
 body .content .projects-header .projects-header_img,
 html .content .projects-header .projects-header_img {
-  background-image: url(./images/projects.jpg);
+  background-image: url(../images/projects.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 700px;
